@@ -1,0 +1,30 @@
+.sidebar,
+.header,
+.main-content {
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 95vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 6;
+}
+
+.main-content {
+    grid-area: 2 / 2 / 6 / 6;
+}
