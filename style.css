@@ -1,12 +1,16 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+/* Styles for outlines while building */
 
 .sidebar,
 .header,
 .main-content {
     border: 1px solid red;
+}
+
+/* Start of styling */
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 body {
