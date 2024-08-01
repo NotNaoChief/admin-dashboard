@@ -18,10 +18,9 @@
     border: 1px solid black;
 } */
 
+
+
 /* Start of styling */
-
-
-/* Layout */
 
 :root {
     --blue: 83, 178, 222;
@@ -46,6 +45,8 @@ body {
     grid-template-rows: 1fr 5fr;
 }
 
+/* Sidebar */
+
 .sidebar {
     padding: 0.5rem 2rem;
     background-color: rgb(var(--blue));
@@ -53,23 +54,6 @@ body {
     display: grid;
     grid-template-rows: 1.15fr 6fr 3fr 7fr;
     row-gap: 2.25rem;
-}
-
-.header {
-    background-color: rgba(255, 255, 255, 0.98);
-    grid-area: 1 / 2 / 2 / 3;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.main-content {
-    padding: 0 2rem 2rem;
-    background-color: rgb(213, 232, 244);
-    grid-area: 2 / 2 / 3 / 3;
-    display: grid;
-    grid-template-columns: 5fr 5fr 3fr;
-    grid-template-rows: 1fr 6fr 6fr;
 }
 
 .sidebar-top,
@@ -117,6 +101,16 @@ svg {
 .sidebar-options {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+}
+
+/* Header */
+
+.header {
+    background-color: rgba(255, 255, 255, 0.98);
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .header-search {
@@ -173,6 +167,17 @@ button {
     color: white;
     font-weight: bold;
     font-size: medium;
+}
+
+/* Main content */
+
+.main-content {
+    padding: 0 2rem 2rem;
+    background-color: rgb(213, 232, 244);
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 5fr 5fr 3fr;
+    grid-template-rows: 1fr 6fr 6fr;
 }
 
 .card-title {
