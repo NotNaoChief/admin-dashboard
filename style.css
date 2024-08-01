@@ -246,7 +246,7 @@ h3 {
     padding-right: 1rem;
     grid-area: 2 / 1 / 4 / 3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(3, 1fr);
 }
 
