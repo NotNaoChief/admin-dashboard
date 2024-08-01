@@ -218,8 +218,8 @@ button {
     background-color: rgb(213, 232, 244);
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template-columns: 5fr 5fr 3fr;
-    grid-template-rows: 1fr 6fr 6fr;
+    grid-template-columns: 6fr 6fr 3fr;
+    grid-template-rows: 1fr 8fr 8fr;
 }
 
 .card-title {
@@ -229,6 +229,11 @@ button {
 .announce-title {
     grid-area: 1 / 3 / 2 / 4;
 }
+
+h3 {
+    font-size: 22px;
+}
+
 
 .card-title,
 .announce-title {
@@ -241,15 +246,36 @@ button {
     padding-right: 1rem;
     grid-area: 2 / 1 / 4 / 3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(3, 1fr);
 }
 
 .card {
+    padding: 2rem 1rem 1rem;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
     background-color: white;
     border-radius: 5px;
+    border-left: 8px solid rgba(255, 153, 0, 0.521);
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    padding-top: 0.5rem;
+}
+
+.card-options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.card-options svg {
+    width: 10%;
 }
 
 .main-right {
@@ -278,6 +304,16 @@ button {
     padding: 1rem 1rem 0 1rem;
 }
 
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.announcements p {
+    padding-top: 0.25rem;
+    font-size: 12px;
+}
+
 .trending {
     margin-top: 1rem;
 }
@@ -294,12 +330,22 @@ button {
 
 .trend {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .trend img {
     grid-area: 1 / 1 / 3 / 2;
+    width: 50%;
+    background-color: yellow;
+    border-radius: 50px;
+    justify-self: center;
 }
 
+.trend span {
+    font-size: 14px;
+}
 
+h6 {
+    font-size: 14px;
+}
